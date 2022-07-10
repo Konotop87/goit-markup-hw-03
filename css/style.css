@@ -27,11 +27,13 @@ p {
 margin: 0px;
 }
 
+img{
+    display: block;
+}
+
 .body {
     color: var(--primery-text-color); 
     font-family: var(--main-font), sans-serif;
-
-    outline: 1px dashed red;
 }
 
 
@@ -41,30 +43,14 @@ margin: 0px;
     padding: 0 15px;
     margin-left: auto;
     margin-right: auto;
-
-    outline: 1px dashed green
 }
 
-/* .conteiner-nav {
-    width: 50%;
-    display: flex;
-    padding: 0 15px;
-    margin-left: auto;
-    margin-right: auto;
-    outline: 1px dashed violet
-}
-
-.conteiner-contact{
-    display: flex;
-    outline: 1px dashed blue;
-} */
 
 
 .list {
     list-style: none; 
     padding: 0;
     margin: 0;
-    display: inline-flex;
     
 }
 
@@ -79,35 +65,44 @@ margin: 0px;
     line-height: calc(42 / 36);
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 50px;
+}
+.subtitle {
+    margin-bottom: 10px;
 }
 
 .section{
-    margin-top:  94px;
+    padding-top:  94px;
+    
 }
-h3{
-    margin-bottom: 10px;
-}
-h2{
-    margin-bottom: 50px;
-}
+
+
 
 /* Header */
 
-.heder{
-    border-bottom: var(--text-color);
+
+.heder-conteiner{
+    display: flex;
+    align-items: center;
 }
+
 .heder-logo{
-    display: inline-block;
-    margin-top: 24px;
-    margin-bottom: 25px;
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+
+.heder-nav{
+    margin-right: auto;  
 }
 
 .heder-list{
+    display: flex;
+    gap: 50px;
     margin-top: 32px;
     margin-bottom: 32px;
-    margin-left: 93px
-    
 }
+
 
 .heder-link{
     font-weight: 500;
@@ -115,8 +110,10 @@ h2{
     line-height: calc(16 / 14);
     letter-spacing: 0.02em;
     color: initial;
-    
+    padding-top: 32px;
+    padding-bottom: 32px;   
 }
+
 .heder-link:hover,
 .heder-link:focus{
     color: var(--accent-color);   
@@ -126,11 +123,6 @@ h2{
     color: var(--accent-color);
 }
 
-.heder-list-2{
-margin-top: 32px;
-margin-bottom: 32px;
-margin-left: 333px;
-}
 
 .heder-link-contact {
     color: var(--text-color);
@@ -139,6 +131,8 @@ margin-left: 333px;
     font-size: 14px;
     line-height: calc(16 / 14);
     letter-spacing: 0.02em;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .heder-link-contact:hover,
@@ -155,7 +149,7 @@ margin-left: 333px;
 }
 
 .logo-main-dark {
-font-family: var(--secondary-font);
+    font-family: var(--secondary-font);
     font-weight: 700;
     font-size: 26px;
     line-height: calc(31 / 26);
@@ -164,7 +158,7 @@ font-family: var(--secondary-font);
 }
 
 .logo-main-light{
-font-family: var(--secondary-font);
+    font-family: var(--secondary-font);
     font-weight: 700;
     font-size: 26px;
     line-height: calc(31 / 26);
@@ -178,7 +172,9 @@ font-family: var(--secondary-font);
 
 .hero{
     background-color: var(--backgraund1);
-    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    
 }
 .mail-title{
     font-weight: 900;
@@ -188,12 +184,15 @@ font-family: var(--secondary-font);
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    display: inline-block;
-    padding: 199px 233px 30px;
-    
+    margin-bottom: 30px;
+    width: 696px;
+    margin-left: auto;
+    margin-right: auto;
+  
 }
 
 .hero-btn{
+    display: block;
     font-family: var(--main-font);
     font-weight: 700;
     font-size: 16px;
@@ -203,15 +202,20 @@ font-family: var(--secondary-font);
     color: var(--white-color);
     cursor: pointer;
     border-radius: 4px;
-    border-color:var(--accent-color) ;
-
+    border :none;
     min-width: 200px;
-    
-    padding:10px 34px 10px 30px;
-    
+    min-height: 50px;
+    max-width: 250px;
+    padding:9px 33px 9px 29px;
+    margin: 0 auto;
 }
 
 /* Benefist */
+
+.benefist-list{
+    display: flex;
+    gap: 30px;
+}
 
 .benefist-title{
     font-weight: 700;
@@ -230,16 +234,28 @@ font-family: var(--secondary-font);
 }
 
 
+/* WORK'S */
+
+.works-list{
+    display: flex;
+    gap: 30px;
+}
+
 
 
 /* TEAM */
-    .team{
+.team{
     background-color: var(--background3);
+    padding-bottom: 94px;
+}
+
+.team-list{
+    display: flex;
+    gap: 30px;
 }
 
 .team-item{
     background-color: var(--white-color);
-    margin-bottom: 94px;
 }
 .team-images{
     font-weight: 500;
@@ -264,15 +280,10 @@ color: var(--text-color);
 
 .footer-logo{
     display: inline-block;
-    margin-top: 50px; 
+    margin-top: 50px;
 }
 
-.contact-adderss{
-    margin-top: 20px;
-}
-.contact-item{
-    margin-top: 9px;
-}
+    
 
 .contact-address-desc{
     font-style: normal;
@@ -280,11 +291,19 @@ color: var(--text-color);
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
     color: var(--white-color);
+    margin-top: 20px;
+    
 }
 
 .contact-list{
     display: block;
+    padding-bottom: 60px;
 }
+
+.contact-item {
+    margin-top: 9px;
+}
+
 
 .contact-link {
     font-size: 14px;
@@ -299,13 +318,26 @@ color: var(--text-color);
 }
 
 
+
+
 /* Portfolio */
+
+.portfolio-filret-list{
+    display: flex;
+    gap: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    margin-bottom: 50px;
+
+}
 
 .portfolio-title{
     font-weight: 700;
     font-size: 18px;
     line-height: 36px;
     letter-spacing: 0.06em;
+    margin-bottom: 4px;
 }
 
 .portfolio-desc{
@@ -314,33 +346,46 @@ color: var(--text-color);
     color: var(--text-color);
 }
 
-.portfolio-bnt-current {
+
+.btn{
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: calc(26 / 16);
     text-align: center;
     letter-spacing: 0.03em;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 6px 22px;
+}
+.portfolio-bnt-current {
     color: var(--white-color);
     background-color: var(--accent-color);
-    cursor: pointer;
+    border-color: var(--accent-color);
 }
 
 .portfolio-btn{
-    font-family: inherit;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: calc(26 / 16);
-    text-align: center;
-    letter-spacing: 0.03em;
-    cursor: pointer;
+    border-color: var(--background3);
+    
 }
 
 .portfolio-btn:hover,
 .portfolio-btn:focus {
     color: var(--white-color);
     background-color: var(--accent-color);
+    border-color: var(--accent-color);
 }
 
+.portfolio-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 94px;
+}
 
-
+.portfolio-item-desc{
+    padding: 19px 23px;
+    border-left: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;   
+}
