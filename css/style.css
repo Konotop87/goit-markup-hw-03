@@ -55,6 +55,7 @@ img{
 }
 
 .link {
+    font-style: normal;
     text-decoration: none;
    
 }
@@ -74,16 +75,21 @@ img{
 .section{
     padding-top:  94px;
     
+    
 }
 
 
 
 /* Header */
 
+.heder{
+    border-bottom: 1px solid #ECECEC;
+}
 
 .heder-conteiner{
     display: flex;
     align-items: center;
+    
 }
 
 .heder-logo{
@@ -99,12 +105,11 @@ img{
 .heder-list{
     display: flex;
     gap: 50px;
-    margin-top: 32px;
-    margin-bottom: 32px;
 }
 
 
 .heder-link{
+    display: block;
     font-weight: 500;
     font-size: 14px;
     line-height: calc(16 / 14);
@@ -217,6 +222,10 @@ img{
     gap: 30px;
 }
 
+.benefist-item{
+    width: 270px;
+}
+
 .benefist-title{
     font-weight: 700;
     font-size: 14px;
@@ -235,6 +244,10 @@ img{
 
 
 /* WORK'S */
+
+.works {
+    padding-bottom: 94px;
+}
 
 .works-list{
     display: flex;
@@ -257,6 +270,12 @@ img{
 .team-item{
     background-color: var(--white-color);
 }
+
+.team-images-desc{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 .team-images{
     font-weight: 500;
     font-size: 16px;
@@ -276,12 +295,14 @@ color: var(--text-color);
 
 .footer{
     background-color: var(--backgraund1);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .footer-logo{
     display: inline-block;
-    margin-top: 50px;
 }
+
 
     
 
@@ -295,12 +316,11 @@ color: var(--text-color);
     
 }
 
-.contact-list{
+/* .contact-list{
     display: block;
-    padding-bottom: 60px;
-}
+} */
 
-.contact-item {
+.contact-item:nth-last-child(2) {
     margin-top: 9px;
 }
 
