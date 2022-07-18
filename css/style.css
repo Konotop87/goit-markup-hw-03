@@ -130,6 +130,7 @@ img{
 
 
 .heder-link-contact {
+    display: block;
     color: var(--text-color);
     text-decoration: none;
     font-weight: 500;
